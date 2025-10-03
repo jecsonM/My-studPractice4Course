@@ -104,21 +104,16 @@ ALTER TABLE IF EXISTS public."Workshops"
 
 
 
-CREATE TABLE public."Employees"
+CREATE TABLE public."Positions"
 (
-    "employeeID" integer NOT NULL GENERATED ALWAYS AS IDENTITY,
-    "fullName" character varying(255) NOT NULL,
-    "birthday" date NOT NULL,
-    "passportSeries" character(4) NOT NULL,
-    "passportNumber" character(6) NOT NULL,
-    "whoIssuedPassport" character varying(255) NOT NULL,
-    "dateOfPassportIssue" date NOT NULL,
-    PRIMARY KEY ("employeeID")
+    "positionID" integer NOT NULL GENERATED ALWAYS AS IDENTITY,
+    "positionName" character varying(255) NOT NULL,
+    "averageHourWage" money NOT NULL,
+    PRIMARY KEY ("positionID")
 );
 
-ALTER TABLE IF EXISTS public."Employees"
+ALTER TABLE IF EXISTS public."Positions"
     OWNER to postgres;
-
 
 
 
@@ -128,6 +123,31 @@ ALTER TABLE IF EXISTS public."Employees"
 
 
 /*    Создание зависимых таблиц первого порядка   */
+
+
+
+CREATE TABLE public."Employees"
+(
+    "employeeID" integer NOT NULL GENERATED ALWAYS AS IDENTITY,
+    "fullName" character varying(255) NOT NULL,
+    "positionID" integer NOT NULL,
+    "birthday" date NOT NULL,
+    "passportSeries" character(4) NOT NULL,
+    "passportNumber" character(6) NOT NULL,
+    "whoIssuedPassport" character varying(255) NOT NULL,
+    "dateOfPassportIssue" date NOT NULL,
+    PRIMARY KEY ("employeeID"),
+    CONSTRAINT "FK_Positions" FOREIGN KEY ("positionID")
+        REFERENCES public."Positions" ("positionID") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID
+);
+
+ALTER TABLE IF EXISTS public."Employees"
+    OWNER to postgres;
+
+
 
 CREATE TABLE public."Suppliers"
 (
@@ -189,7 +209,6 @@ CREATE TABLE public."Partners"
     "phone" character varying(15),
     "logo" bytea,
     "INN" character(10) NOT NULL,
-    cost money,
     PRIMARY KEY ("partnerID"),
     CONSTRAINT "FK_PartnerTypes" FOREIGN KEY ("partnerTypeId")
         REFERENCES public."PartnerTypes" ("partnerTypeId") MATCH SIMPLE
@@ -388,13 +407,31 @@ CREATE TABLE public."PriceLists"
 ALTER TABLE IF EXISTS public."PriceLists"
     OWNER to postgres;
 
+CREATE TABLE public."ServiceWorkNeeds"
+(
+    "serviceID" integer NOT NULL,
+    "positionID" integer NOT NULL,
+    "overalWorkTime" interval NOT NULL,
+    PRIMARY KEY ("serviceID", "positionID"),
+    CONSTRAINT "FK_Services" FOREIGN KEY ("serviceID")
+        REFERENCES public."Services" ("serviceID") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID,
+    CONSTRAINT "FK_Positions" FOREIGN KEY ("positionID")
+        REFERENCES public."Positions" ("positionID") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID
+);
 
+ALTER TABLE IF EXISTS public."ServiceWorkNeeds"
+    OWNER to postgres;
 
-CREATE TABLE public."ServiceNeeds"
+CREATE TABLE public."ServiceConsumableNeeds"
 (
     "serviceID" integer NOT NULL,
     "consumableID" integer NOT NULL,
-    "workersNeeded" integer,
     "consumableUseAmount" real NOT NULL,
     PRIMARY KEY ("serviceID", "consumableID"),
     CONSTRAINT "FK_Services" FOREIGN KEY ("serviceID")
@@ -409,7 +446,7 @@ CREATE TABLE public."ServiceNeeds"
         NOT VALID
 );
 
-ALTER TABLE IF EXISTS public."ServiceNeeds"
+ALTER TABLE IF EXISTS public."ServiceConsumableNeeds"
     OWNER to postgres;
 /*    Создание зависимых таблиц второго порядка   */
 

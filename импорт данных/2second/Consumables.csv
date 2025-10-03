@@ -1,0 +1,4 @@
+consumableID,consumableTypeID,consumableName,consumableDescription,unitTypeID,amountInOneUnit,consumableImage,cost
+1,1,Отбеливатель 3000,очень качественный отбеливатель,1,30,,"$1,000.00"
+2,2,"хим. средство '"Свежая мохнатость'"",средство для чистки шуб,2,9,,$250.00
+3,3,Пакеты для упаковки,пакеты для упаковки,3,16,,$20.00
