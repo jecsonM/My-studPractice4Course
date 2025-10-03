@@ -305,7 +305,6 @@ CREATE TABLE public."Raitings"
     "partnerID" integer NOT NULL,
     "raiting" real NOT NULL,
     "createdAt" timestamp(0) without time zone NOT NULL,
-    cost money,
     PRIMARY KEY ("raitingID"),
     CONSTRAINT "FK_Partners" FOREIGN KEY ("partnerID")
         REFERENCES public."Partners" ("partnerID") MATCH SIMPLE
