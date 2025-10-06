@@ -11,28 +11,20 @@
       "RelativeMoniker": "D:0:0:{671CA432-A76B-4AEF-A140-1DA0060BE739}|WpfLaundrySystemApp\\WpfLaundrySystemApp.csproj|solutionrelative:wpflaundrysystemapp\\windows\\editdisplay.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{671CA432-A76B-4AEF-A140-1DA0060BE739}|WpfLaundrySystemApp\\WpfLaundrySystemApp.csproj|d:\\programmingevgeniy\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 4 \u043A\u0443\u0440\u0441\\wpflaundrysystemapp\\wpflaundrysystemapp\\models\\workshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{671CA432-A76B-4AEF-A140-1DA0060BE739}|WpfLaundrySystemApp\\WpfLaundrySystemApp.csproj|solutionrelative:wpflaundrysystemapp\\models\\workshop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{671CA432-A76B-4AEF-A140-1DA0060BE739}|WpfLaundrySystemApp\\WpfLaundrySystemApp.csproj|d:\\programmingevgeniy\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 4 \u043A\u0443\u0440\u0441\\wpflaundrysystemapp\\wpflaundrysystemapp\\windows\\editdisplay.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{671CA432-A76B-4AEF-A140-1DA0060BE739}|WpfLaundrySystemApp\\WpfLaundrySystemApp.csproj|solutionrelative:wpflaundrysystemapp\\windows\\editdisplay.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{671CA432-A76B-4AEF-A140-1DA0060BE739}|WpfLaundrySystemApp\\WpfLaundrySystemApp.csproj|d:\\programmingevgeniy\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 4 \u043A\u0443\u0440\u0441\\wpflaundrysystemapp\\wpflaundrysystemapp\\attributes\\attributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{671CA432-A76B-4AEF-A140-1DA0060BE739}|WpfLaundrySystemApp\\WpfLaundrySystemApp.csproj|solutionrelative:wpflaundrysystemapp\\attributes\\attributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{671CA432-A76B-4AEF-A140-1DA0060BE739}|WpfLaundrySystemApp\\WpfLaundrySystemApp.csproj|d:\\programmingevgeniy\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 4 \u043A\u0443\u0440\u0441\\wpflaundrysystemapp\\wpflaundrysystemapp\\dbcontext\\laundrydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{671CA432-A76B-4AEF-A140-1DA0060BE739}|WpfLaundrySystemApp\\WpfLaundrySystemApp.csproj|solutionrelative:wpflaundrysystemapp\\dbcontext\\laundrydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{671CA432-A76B-4AEF-A140-1DA0060BE739}|WpfLaundrySystemApp\\WpfLaundrySystemApp.csproj|d:\\programmingevgeniy\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 4 \u043A\u0443\u0440\u0441\\wpflaundrysystemapp\\wpflaundrysystemapp\\models\\branchpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{671CA432-A76B-4AEF-A140-1DA0060BE739}|WpfLaundrySystemApp\\WpfLaundrySystemApp.csproj|solutionrelative:wpflaundrysystemapp\\models\\branchpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{671CA432-A76B-4AEF-A140-1DA0060BE739}|WpfLaundrySystemApp\\WpfLaundrySystemApp.csproj|d:\\programmingevgeniy\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 4 \u043A\u0443\u0440\u0441\\wpflaundrysystemapp\\wpflaundrysystemapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{671CA432-A76B-4AEF-A140-1DA0060BE739}|WpfLaundrySystemApp\\WpfLaundrySystemApp.csproj|solutionrelative:wpflaundrysystemapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{671CA432-A76B-4AEF-A140-1DA0060BE739}|WpfLaundrySystemApp\\WpfLaundrySystemApp.csproj|d:\\programmingevgeniy\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 4 \u043A\u0443\u0440\u0441\\wpflaundrysystemapp\\wpflaundrysystemapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{671CA432-A76B-4AEF-A140-1DA0060BE739}|WpfLaundrySystemApp\\WpfLaundrySystemApp.csproj|solutionrelative:wpflaundrysystemapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{671CA432-A76B-4AEF-A140-1DA0060BE739}|WpfLaundrySystemApp\\WpfLaundrySystemApp.csproj|d:\\programmingevgeniy\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 4 \u043A\u0443\u0440\u0441\\wpflaundrysystemapp\\wpflaundrysystemapp\\windows\\editdisplay.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{671CA432-A76B-4AEF-A140-1DA0060BE739}|WpfLaundrySystemApp\\WpfLaundrySystemApp.csproj|solutionrelative:wpflaundrysystemapp\\windows\\editdisplay.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{671CA432-A76B-4AEF-A140-1DA0060BE739}|WpfLaundrySystemApp\\WpfLaundrySystemApp.csproj|d:\\programmingevgeniy\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 4 \u043A\u0443\u0440\u0441\\wpflaundrysystemapp\\wpflaundrysystemapp\\models\\partner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{671CA432-A76B-4AEF-A140-1DA0060BE739}|WpfLaundrySystemApp\\WpfLaundrySystemApp.csproj|solutionrelative:wpflaundrysystemapp\\models\\partner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,41 +38,41 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BranchPoint.cs",
+              "DocumentMoniker": "D:\\ProgrammingEvgeniy\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 4 \u043A\u0443\u0440\u0441\\WpfLaundrySystemApp\\WpfLaundrySystemApp\\Models\\BranchPoint.cs",
+              "RelativeDocumentMoniker": "WpfLaundrySystemApp\\Models\\BranchPoint.cs",
+              "ToolTip": "D:\\ProgrammingEvgeniy\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 4 \u043A\u0443\u0440\u0441\\WpfLaundrySystemApp\\WpfLaundrySystemApp\\Models\\BranchPoint.cs",
+              "RelativeToolTip": "WpfLaundrySystemApp\\Models\\BranchPoint.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T15:06:39.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Partner.cs",
+              "DocumentMoniker": "D:\\ProgrammingEvgeniy\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 4 \u043A\u0443\u0440\u0441\\WpfLaundrySystemApp\\WpfLaundrySystemApp\\Models\\Partner.cs",
+              "RelativeDocumentMoniker": "WpfLaundrySystemApp\\Models\\Partner.cs",
+              "ToolTip": "D:\\ProgrammingEvgeniy\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 4 \u043A\u0443\u0440\u0441\\WpfLaundrySystemApp\\WpfLaundrySystemApp\\Models\\Partner.cs",
+              "RelativeToolTip": "WpfLaundrySystemApp\\Models\\Partner.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwCkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T10:54:59.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Attributes.cs",
               "DocumentMoniker": "D:\\ProgrammingEvgeniy\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 4 \u043A\u0443\u0440\u0441\\WpfLaundrySystemApp\\WpfLaundrySystemApp\\Attributes\\Attributes.cs",
               "RelativeDocumentMoniker": "WpfLaundrySystemApp\\Attributes\\Attributes.cs",
               "ToolTip": "D:\\ProgrammingEvgeniy\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 4 \u043A\u0443\u0440\u0441\\WpfLaundrySystemApp\\WpfLaundrySystemApp\\Attributes\\Attributes.cs",
               "RelativeToolTip": "WpfLaundrySystemApp\\Attributes\\Attributes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBQAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-06T09:10:00.275Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Workshop.cs",
-              "DocumentMoniker": "D:\\ProgrammingEvgeniy\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 4 \u043A\u0443\u0440\u0441\\WpfLaundrySystemApp\\WpfLaundrySystemApp\\Models\\Workshop.cs",
-              "RelativeDocumentMoniker": "WpfLaundrySystemApp\\Models\\Workshop.cs",
-              "ToolTip": "D:\\ProgrammingEvgeniy\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 4 \u043A\u0443\u0440\u0441\\WpfLaundrySystemApp\\WpfLaundrySystemApp\\Models\\Workshop.cs",
-              "RelativeToolTip": "WpfLaundrySystemApp\\Models\\Workshop.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T09:05:48.333Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LaundryDBcontext.cs",
-              "DocumentMoniker": "D:\\ProgrammingEvgeniy\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 4 \u043A\u0443\u0440\u0441\\WpfLaundrySystemApp\\WpfLaundrySystemApp\\DBContext\\LaundryDBcontext.cs",
-              "RelativeDocumentMoniker": "WpfLaundrySystemApp\\DBContext\\LaundryDBcontext.cs",
-              "ToolTip": "D:\\ProgrammingEvgeniy\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 4 \u043A\u0443\u0440\u0441\\WpfLaundrySystemApp\\WpfLaundrySystemApp\\DBContext\\LaundryDBcontext.cs",
-              "RelativeToolTip": "WpfLaundrySystemApp\\DBContext\\LaundryDBcontext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T08:57:45.208Z",
               "EditorCaption": ""
             },
             {
@@ -91,7 +83,7 @@
               "RelativeDocumentMoniker": "WpfLaundrySystemApp\\Modules\\DynamicTableCreator.cs",
               "ToolTip": "D:\\ProgrammingEvgeniy\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 4 \u043A\u0443\u0440\u0441\\WpfLaundrySystemApp\\WpfLaundrySystemApp\\Modules\\DynamicTableCreator.cs",
               "RelativeToolTip": "WpfLaundrySystemApp\\Modules\\DynamicTableCreator.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAgwGQAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-06T08:53:38.143Z",
               "EditorCaption": ""
@@ -104,14 +96,14 @@
               "RelativeDocumentMoniker": "WpfLaundrySystemApp\\Windows\\EditDisplay.xaml.cs",
               "ToolTip": "D:\\ProgrammingEvgeniy\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 4 \u043A\u0443\u0440\u0441\\WpfLaundrySystemApp\\WpfLaundrySystemApp\\Windows\\EditDisplay.xaml.cs",
               "RelativeToolTip": "WpfLaundrySystemApp\\Windows\\EditDisplay.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-06T08:51:54.426Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "EditDisplay.xaml",
               "DocumentMoniker": "D:\\ProgrammingEvgeniy\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 4 \u043A\u0443\u0440\u0441\\WpfLaundrySystemApp\\WpfLaundrySystemApp\\Windows\\EditDisplay.xaml",
               "RelativeDocumentMoniker": "WpfLaundrySystemApp\\Windows\\EditDisplay.xaml",
@@ -119,32 +111,6 @@
               "RelativeToolTip": "WpfLaundrySystemApp\\Windows\\EditDisplay.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-10-06T08:44:19.796Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "D:\\ProgrammingEvgeniy\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 4 \u043A\u0443\u0440\u0441\\WpfLaundrySystemApp\\WpfLaundrySystemApp\\App.xaml.cs",
-              "RelativeDocumentMoniker": "WpfLaundrySystemApp\\App.xaml.cs",
-              "ToolTip": "D:\\ProgrammingEvgeniy\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 4 \u043A\u0443\u0440\u0441\\WpfLaundrySystemApp\\WpfLaundrySystemApp\\App.xaml.cs",
-              "RelativeToolTip": "WpfLaundrySystemApp\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T07:26:03.635Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\ProgrammingEvgeniy\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 4 \u043A\u0443\u0440\u0441\\WpfLaundrySystemApp\\WpfLaundrySystemApp\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "WpfLaundrySystemApp\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\ProgrammingEvgeniy\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 4 \u043A\u0443\u0440\u0441\\WpfLaundrySystemApp\\WpfLaundrySystemApp\\MainWindow.xaml.cs",
-              "RelativeToolTip": "WpfLaundrySystemApp\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T13:21:04.305Z",
               "EditorCaption": ""
             }
           ]

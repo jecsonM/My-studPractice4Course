@@ -124,3 +124,4 @@ D:\ProgrammingEvgeniy\Учебная практика 4 курс\WpfLaundrySyste
 D:\ProgrammingEvgeniy\Учебная практика 4 курс\WpfLaundrySystemApp\WpfLaundrySystemApp\obj\Debug\net8.0-windows\Windows\EditDisplay.baml
 D:\ProgrammingEvgeniy\Учебная практика 4 курс\WpfLaundrySystemApp\WpfLaundrySystemApp\obj\Debug\net8.0-windows\MainWindow.g.cs
 D:\ProgrammingEvgeniy\Учебная практика 4 курс\WpfLaundrySystemApp\WpfLaundrySystemApp\obj\Debug\net8.0-windows\MainWindow.baml
+D:\ProgrammingEvgeniy\Учебная практика 4 курс\WpfLaundrySystemApp\WpfLaundrySystemApp\obj\Debug\net8.0-windows\App.baml

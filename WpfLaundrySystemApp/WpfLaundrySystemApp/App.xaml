@@ -4,6 +4,103 @@
              xmlns:local="clr-namespace:WpfLaundrySystemApp"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Color x:Key="PrimaryBackgroundColor">White</Color>
+        <Color x:Key="SecondaryBackgroundColor">#E0FFFF</Color>
+        <Color x:Key="AccentColor">#00CED1</Color>
+
+        
+        <SolidColorBrush x:Key="PrimaryBackgroundBrush" Color="{StaticResource PrimaryBackgroundColor}"/>
+        <SolidColorBrush x:Key="SecondaryBackgroundBrush" Color="{StaticResource SecondaryBackgroundColor}"/>
+        <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource AccentColor}"/>
+
+
+
+        
+
+
+
+        <FontFamily x:Key="DefaultFontFamily">Franklin Gothic Medium</FontFamily>
+
+
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="{StaticResource DefaultFontFamily}"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="Black"/>
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="{StaticResource DefaultFontFamily}"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Background" Value="Transparent"/>
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="{StaticResource DefaultFontFamily}"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Background" Value="{StaticResource SecondaryBackgroundBrush}"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="5"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="{StaticResource AccentBrush}"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#009ACD"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="FontFamily" Value="{StaticResource DefaultFontFamily}"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="#CCCCCC"/>
+            <Setter Property="Padding" Value="5"/>
+            <Style.Triggers>
+                <Trigger Property="IsFocused" Value="True">
+                    <Setter Property="BorderBrush" Value="{StaticResource AccentBrush}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style TargetType="DataGrid">
+            <Setter Property="FontFamily" Value="{StaticResource DefaultFontFamily}"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="#CCCCCC"/>
+            <Setter Property="RowBackground" Value="White"/>
+            <Setter Property="AlternatingRowBackground" Value="{StaticResource SecondaryBackgroundBrush}"/>
+            <Setter Property="HorizontalGridLinesBrush" Value="#EEEEEE"/>
+            <Setter Property="VerticalGridLinesBrush" Value="#EEEEEE"/>
+            <Setter Property="HeadersVisibility" Value="Column"/>
+            
+            
+        </Style>
+
+        <Style TargetType="DataGridColumnHeader">
+            <Setter Property="FontFamily" Value="{StaticResource DefaultFontFamily}"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Background" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="10,5"/>
+        </Style>
+
+        <Style TargetType="Window">
+            <Setter Property="Background" Value="{StaticResource PrimaryBackgroundBrush}"/>
+            <Setter Property="FontFamily" Value="{StaticResource DefaultFontFamily}"/>
+        </Style>
+
+        <Style TargetType="ContentControl">
+            <Setter Property="FontFamily" Value="{StaticResource DefaultFontFamily}"/>
+        </Style>
     </Application.Resources>
 </Application>

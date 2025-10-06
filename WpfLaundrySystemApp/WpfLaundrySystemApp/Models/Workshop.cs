@@ -4,20 +4,21 @@ using WpfLaundrySystemApp.Attributes;
 
 namespace WpfLaundrySystemApp.Models;
 
+[DisplayClassNameAttribute("Цеха")]
 public partial class Workshop
 {
     
-    [DisplayNameAttribute("Идентификатор цеха")]
+    [DisplayBehaviourAttribute("Идентификатор")]
     public int WorkshopId { get; set; }
 
-    [DisplayNameAttribute("Название цеха")]
+    [DisplayBehaviourAttribute("Название")]
     public string WorkShopName { get; set; } = null!;
 
     //[HiddenColumn]
-    [DisplayNameAttribute("Оказываемые услуги", Visible = false)]
+    [DisplayBehaviourAttribute("Оказываемые услуги", Visible = false)]
     public virtual ICollection<AttendedService> AttendedServices { get; set; } = new List<AttendedService>();
 
     //[HiddenColumn]
-    [DisplayNameAttribute("Движения работников", Visible =false)]
+    [DisplayBehaviourAttribute("Движения работников", Visible =false)]
     public virtual ICollection<EmployeeMovement> EmployeeMovements { get; set; } = new List<EmployeeMovement>();
 }

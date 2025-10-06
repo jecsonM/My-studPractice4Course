@@ -7,6 +7,15 @@
         mc:Ignorable="d"
         Title="EditDisplay" Height="450" Width="800">
     <Grid>
+        <TextBlock x:Name="pageTitle" 
+                   DockPanel.Dock="Top" 
+                   FontSize="16" 
+                   FontWeight="Bold"
+                   Margin="10"
+                   HorizontalAlignment="Center"
+                   Text="Привет"/>
+
         
+        <ContentControl x:Name="mainContent" Margin="0,46,0,0"/>
     </Grid>
 </Window>

@@ -20,6 +20,7 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+
 using WpfLaundrySystemApp.Models;
 
 namespace WpfLaundrySystemApp.DBContext;
