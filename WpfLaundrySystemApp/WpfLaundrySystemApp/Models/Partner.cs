@@ -36,10 +36,10 @@ public partial class Partner
     [DisplayBehaviourAttribute("Филиалы", IsSeeAllButtonRequired = true)]
     public virtual ICollection<BranchPoint> BranchPoints { get; set; } = new List<BranchPoint>();
 
-    [DisplayBehaviourAttribute("Заказы")]
+    [DisplayBehaviourAttribute("Заказы", IsSeeAllButtonRequired = true)]
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
 
-    [DisplayBehaviourAttribute("Рейтинг")]
+    [DisplayBehaviourAttribute("Рейтинг", IsSeeAllButtonRequired = true)]
     public virtual ICollection<Raiting> Raitings { get; set; } = new List<Raiting>();
 
     public override string ToString()

@@ -21,4 +21,9 @@ public partial class Workshop
     //[HiddenColumn]
     [DisplayBehaviourAttribute("Движения работников", Visible =false)]
     public virtual ICollection<EmployeeMovement> EmployeeMovements { get; set; } = new List<EmployeeMovement>();
+
+    public override string ToString()
+    {
+        return WorkShopName;
+    }
 }

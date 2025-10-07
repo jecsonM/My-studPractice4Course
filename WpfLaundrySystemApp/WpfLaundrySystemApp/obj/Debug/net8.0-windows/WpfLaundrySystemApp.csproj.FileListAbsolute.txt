@@ -120,8 +120,10 @@ D:\ProgrammingEvgeniy\Учебная практика 4 курс\WpfLaundrySyste
 D:\ProgrammingEvgeniy\Учебная практика 4 курс\WpfLaundrySystemApp\WpfLaundrySystemApp\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 D:\ProgrammingEvgeniy\Учебная практика 4 курс\WpfLaundrySystemApp\WpfLaundrySystemApp\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 D:\ProgrammingEvgeniy\Учебная практика 4 курс\WpfLaundrySystemApp\WpfLaundrySystemApp\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
-D:\ProgrammingEvgeniy\Учебная практика 4 курс\WpfLaundrySystemApp\WpfLaundrySystemApp\obj\Debug\net8.0-windows\Windows\EditDisplay.g.cs
-D:\ProgrammingEvgeniy\Учебная практика 4 курс\WpfLaundrySystemApp\WpfLaundrySystemApp\obj\Debug\net8.0-windows\Windows\EditDisplay.baml
 D:\ProgrammingEvgeniy\Учебная практика 4 курс\WpfLaundrySystemApp\WpfLaundrySystemApp\obj\Debug\net8.0-windows\MainWindow.g.cs
 D:\ProgrammingEvgeniy\Учебная практика 4 курс\WpfLaundrySystemApp\WpfLaundrySystemApp\obj\Debug\net8.0-windows\MainWindow.baml
 D:\ProgrammingEvgeniy\Учебная практика 4 курс\WpfLaundrySystemApp\WpfLaundrySystemApp\obj\Debug\net8.0-windows\App.baml
+D:\ProgrammingEvgeniy\Учебная практика 4 курс\WpfLaundrySystemApp\WpfLaundrySystemApp\obj\Debug\net8.0-windows\Windows\EditEntry.g.cs
+D:\ProgrammingEvgeniy\Учебная практика 4 курс\WpfLaundrySystemApp\WpfLaundrySystemApp\obj\Debug\net8.0-windows\Windows\EditEntry.baml
+D:\ProgrammingEvgeniy\Учебная практика 4 курс\WpfLaundrySystemApp\WpfLaundrySystemApp\obj\Debug\net8.0-windows\Windows\DisplayTable.g.cs
+D:\ProgrammingEvgeniy\Учебная практика 4 курс\WpfLaundrySystemApp\WpfLaundrySystemApp\obj\Debug\net8.0-windows\Windows\DisplayTable.baml

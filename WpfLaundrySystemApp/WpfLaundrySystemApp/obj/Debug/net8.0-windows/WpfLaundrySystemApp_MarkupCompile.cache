@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\ProgrammingEvgeniy\Учебная практика 4 курс\WpfLaundrySystemApp\WpfLaundrySystemApp\App.xaml
-2952652406
+359731425
 
-33-618935146
+34-1475684155
 212-739635546
-MainWindow.xaml;Windows\EditDisplay.xaml;
+MainWindow.xaml;Windows\DisplayTable.xaml;Windows\EditEntry.xaml;
 
 False
 

@@ -23,8 +23,9 @@ namespace WpfLaundrySystemApp
             
             InitializeComponent();
 
-            EditDisplay editDispWindow = new EditDisplay();
+            DisplayTable editDispWindow = new DisplayTable();
             editDispWindow.Show();
+            this.Close();
         }
     }
 }
