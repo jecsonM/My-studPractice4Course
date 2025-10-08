@@ -25,6 +25,9 @@ namespace WpfLaundrySystemApp.Windows
     public partial class DisplayTable : Window
     {
         public DynamicTableCreator dynamicTableCreator;
+        public Stack<DynamicTableCreatorHistory> DynamicTableTravelHistory = new Stack<DynamicTableCreatorHistory>();
+
+
         public DisplayTable(Type typeToOpenTable)
         {
             InitializeComponent();
@@ -44,7 +47,6 @@ namespace WpfLaundrySystemApp.Windows
             UpdateTable();
 
 
-
         }
 
         public DisplayTable() : this(typeof(Partner)) 
@@ -53,6 +55,7 @@ namespace WpfLaundrySystemApp.Windows
 
         public void SetNewDisplayTable(Type typeToChangeTableFor, object getPKconstraintsFrom = null)
         {
+            DynamicTableTravelHistory.Push(new DynamicTableCreatorHistory(dynamicTableCreator));
             dynamicTableCreator.SetNewTableToGenerate(typeToChangeTableFor, getPKconstraintsFrom);
             UpdateTable();
         }
@@ -61,6 +64,16 @@ namespace WpfLaundrySystemApp.Windows
         {
             pageTitle.Text = dynamicTableCreator.GetTitle();
             mainContent.Content = dynamicTableCreator.GenerateTable();
+        }
+
+        private void ButtonGoBack_Click(object sender, RoutedEventArgs e)
+        {
+            DynamicTableCreatorHistory dynamicTableCreatorHistory;
+            if (DynamicTableTravelHistory.TryPop(out dynamicTableCreatorHistory))
+            {
+                dynamicTableCreator.SetNewTableToGenerate(dynamicTableCreatorHistory.TypeOfTheDynamicallyCreatedTable, dynamicTableCreatorHistory.WhereArguments);
+                UpdateTable();
+            }
         }
 
         private void ButtonSeeAll_Click(object sender, RoutedEventArgs e)
@@ -86,6 +99,12 @@ namespace WpfLaundrySystemApp.Windows
         }
         private void DeleteMenuItem_Click(object sender, RoutedEventArgs e)
         {
+            MenuItem ItemToEdit = sender as MenuItem;
+
+            dynamicTableCreator.TryRemovingObject(dynamicTableCreator.DataGrid.SelectedItem);
+            dynamicTableCreator.SaveChanges();
+            dynamicTableCreator.ReCreateDbContext();
+            UpdateTable();
         }
 
         private void AddMenuItem_Click(object sender, RoutedEventArgs e)
@@ -98,6 +117,7 @@ namespace WpfLaundrySystemApp.Windows
             if (editWindow.ShowDialog() == true)
             {
                 dynamicTableCreator.SaveChanges();
+                MessageBox.Show("Изменения сохранены!");
                 dynamicTableCreator.ReCreateDbContext();
             }
             else

@@ -20,6 +20,7 @@ using WpfLaundrySystemApp.Models;
 using System.Diagnostics.CodeAnalysis;
 using WpfLaundrySystemApp.Windows;
 using Microsoft.EntityFrameworkCore.Metadata;
+using System.Windows.Media.Animation;
 
 namespace WpfLaundrySystemApp.Modules
 {
@@ -78,6 +79,14 @@ namespace WpfLaundrySystemApp.Modules
             db = Activator.CreateInstance(typeOfDBContext) as DbContext;
 
 
+        }
+        public void SetNewTableToGenerate(Type typeToChange, Dictionary<PropertyInfo,object> whereArguments)
+        {
+
+            ReCreateDbContext();
+
+            WhereArguments = whereArguments;
+            TypeOfTheDynamicallyCreatedTable = typeToChange;
         }
 
         public void SetNewTableToGenerate(Type typeToChange, object getPKContraintsFrom = null)
@@ -153,6 +162,7 @@ namespace WpfLaundrySystemApp.Modules
             return dataGrid;
         }
 
+
         public ContextMenu CreateContextMenu()
         {
             ContextMenu contextMenu = new ContextMenu();
@@ -182,8 +192,38 @@ namespace WpfLaundrySystemApp.Modules
 
             return contextMenu;
         }
-        
-        
+
+        public bool TryRemovingObject(object whatToRemove)
+        {
+            try
+            {
+                db.Remove(whatToRemove);
+
+            }
+            catch
+            {
+                return false;
+            }
+
+
+            return true;
+        }
+
+        public bool TryAddingNewObject(object whatToAdd)
+        {
+            try
+            {
+                db.Add(whatToAdd);
+
+            }
+            catch
+            {
+                return false;
+            }
+            
+
+            return true;
+        }
 
         public IEnumerable<object> GetData()
         {

@@ -43,6 +43,7 @@ namespace WpfLaundrySystemApp.Windows
 
             ParentialWindow = parentialWindow;
             _editModel = editModel;
+            _editMode = editMode;
             TableCreator =new DynamicTableCreator(new LaundryDbContext());
             InitializeComponent();
             CreateDynamicFields();
@@ -199,12 +200,21 @@ namespace WpfLaundrySystemApp.Windows
                     ToolTip = "Формат: чч:мм:сс",
                     IsEnabled = isEnabled
                 };
-                
+
                 return textBox;
+            }
+            else if (propertyType == typeof(byte?[]) || propertyType == typeof(byte[]))
+            {
+                return new TextBox
+                {
+                    Height = 25,
+                    Padding = new Thickness(5),
+                    IsEnabled = false
+                };
             }
             else if (propertyType == typeof(bool) || propertyType == typeof(bool?))
             {
-                return new CheckBox() { IsEnabled = isEnabled};
+                return new CheckBox() { IsEnabled = isEnabled };
             }
             else if (property.GetCustomAttribute<DisplayBehaviourAttribute>().IsIncludeRequired)
             {
@@ -216,7 +226,7 @@ namespace WpfLaundrySystemApp.Windows
 
                 TableCreator.TypeOfTheDynamicallyCreatedTable = propertyType;
                 listBox.ItemsSource = TableCreator.GetData();
-                
+
                 return listBox;
             }
             else if (property.GetCustomAttribute<DisplayBehaviourAttribute>().IsSeeAllButtonRequired)
@@ -314,6 +324,8 @@ namespace WpfLaundrySystemApp.Windows
                             return decimal.Parse(textBox.Text);
                         else if (targetType == typeof(TimeSpan))
                             return TimeSpan.Parse(textBox.Text);
+                        else if (targetType == typeof(byte[]))
+                            return new byte[0]; ////ЗАГЛУШКА ДЛЯ КАРТИНОК
                         else
                             return Convert.ChangeType(textBox.Text, targetType);
 
@@ -346,8 +358,8 @@ namespace WpfLaundrySystemApp.Windows
         private void SetModelFK(PropertyInfo property, object newValue)
         {
             object propertyValue = property.GetValue(_editModel);
-
-            Dictionary<PropertyInfo, PropertyInfo> fk_pk_Properties = TableCreator.GetFK_PK_pairsProperties(_editModel.GetType(), propertyValue.GetType());
+            
+            Dictionary<PropertyInfo, PropertyInfo> fk_pk_Properties = TableCreator.GetFK_PK_pairsProperties(_editModel.GetType(), property.PropertyType);
             foreach(KeyValuePair<PropertyInfo, PropertyInfo> fk_pk_property in fk_pk_Properties)
             {
                 fk_pk_property.Key.SetValue(_editModel, fk_pk_property.Value.GetValue(newValue));
@@ -370,24 +382,45 @@ namespace WpfLaundrySystemApp.Windows
                         if (property != null)
                         {
                             object newValue = GetControlValue(inputControl, property.PropertyType);
+
                             if (property.GetCustomAttribute<DisplayBehaviourAttribute>().IsIncludeRequired)
+                            {
+                                if (newValue is null)
+                                    throw new FieldException("поле указано некорректно", property); 
                                 SetModelFK(property, newValue);
+                            }
                             else
                                 property.SetValue(_editModel, newValue);
                         }
                     }
                 }
-
-                MessageBox.Show("Изменения сохранены!");
+                if (_editMode == EditMode.Add)
+                    ParentialWindow.dynamicTableCreator.TryAddingNewObject(_editModel);
                 this.DialogResult = true;
                 this.Close();
+            }
+            catch (FieldException ex)
+            {
+                MessageBox.Show($"Ошибка при сохранении: в поле \"{ex.PropertyInfoThatCausedException.GetCustomAttribute<DisplayBehaviourAttribute>().DisplayName}\" {ex.Message}");
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Ошибка при сохранении: {ex.Message}");
             }
+            
         }
+        private class FieldException : Exception
+        {
 
+            public FieldException(string message, PropertyInfo propertyInfoThatCausedException) : base(message) 
+            {
+                PropertyInfoThatCausedException = propertyInfoThatCausedException;
+
+
+            }
+
+            public PropertyInfo PropertyInfoThatCausedException;
+        }
         
     }
 }

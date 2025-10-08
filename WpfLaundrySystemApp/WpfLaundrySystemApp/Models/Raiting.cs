@@ -22,4 +22,9 @@ public partial class Raiting
     [DisplayBehaviourAttribute("Дата создания")]
     public DateTime CreatedAt { get; set; }
 
+    public override string ToString()
+    {
+        return Raiting1.ToString();
+    }
+
 }

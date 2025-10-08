@@ -14,13 +14,7 @@
         <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource AccentColor}"/>
 
 
-
-        
-
-
-
         <FontFamily x:Key="DefaultFontFamily">Franklin Gothic Medium</FontFamily>
-
 
         <Style TargetType="TextBlock">
             <Setter Property="FontFamily" Value="{StaticResource DefaultFontFamily}"/>
