@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfLaundrySystemApp", "WpfL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialCalculationModule", "MaterialCalculationModule\MaterialCalculationModule.csproj", "{12DFEB45-DFB9-42D8-9D1F-85812AC31F9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProjectForWPFLaundrySystem", "TestProjectForWPFLaundrySystem\TestProjectForWPFLaundrySystem.csproj", "{FDEDE922-07EF-453C-A015-A666553C38B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{12DFEB45-DFB9-42D8-9D1F-85812AC31F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12DFEB45-DFB9-42D8-9D1F-85812AC31F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12DFEB45-DFB9-42D8-9D1F-85812AC31F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDEDE922-07EF-453C-A015-A666553C38B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDEDE922-07EF-453C-A015-A666553C38B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDEDE922-07EF-453C-A015-A666553C38B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDEDE922-07EF-453C-A015-A666553C38B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

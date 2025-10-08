@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MaterialCalculationModule")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef48c66e92c3da8ac55347b57f7320046e8bc680")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+438824f04688c6a24ca292a0579bc9df35e5a0ce")]
 [assembly: System.Reflection.AssemblyProductAttribute("MaterialCalculationModule")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MaterialCalculationModule")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

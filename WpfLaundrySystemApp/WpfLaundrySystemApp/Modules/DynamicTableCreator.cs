@@ -32,8 +32,6 @@ namespace WpfLaundrySystemApp.Modules
 
         public Type TypeOfTheDynamicallyCreatedTable { get; set; }
 
-        //public List<object> AdditionalPKConstraints { get; set; } = null;
-
         public Dictionary<PropertyInfo, object> WhereArguments { get; set; } = null;
 
         public DataGrid DataGrid { get; set; }
@@ -95,9 +93,12 @@ namespace WpfLaundrySystemApp.Modules
             ReCreateDbContext();
 
 
+
             if (getPKContraintsFrom is null)
             {
-                WhereArguments = null;
+                WhereArguments = new Dictionary<PropertyInfo, object>();
+                TypeOfTheDynamicallyCreatedTable = typeToChange;
+                return;
             }
             
             
@@ -105,10 +106,10 @@ namespace WpfLaundrySystemApp.Modules
 
 
             PropertyInfo[] pkProperties = GetPrimaryKeyProperties(typeOfAdditionalPK);
+            PropertyInfo[] fkProperties = GetForeignKeyProperties(typeToChange, TypeOfTheDynamicallyCreatedTable);
 
 
             
-            PropertyInfo[] fkProperties = GetForeignKeyProperties(typeToChange, TypeOfTheDynamicallyCreatedTable);
 
 
             WhereArguments = new Dictionary<PropertyInfo, object>(fkProperties.Length);

@@ -102,7 +102,17 @@ namespace WpfLaundrySystemApp.Windows
             MenuItem ItemToEdit = sender as MenuItem;
 
             dynamicTableCreator.TryRemovingObject(dynamicTableCreator.DataGrid.SelectedItem);
-            dynamicTableCreator.SaveChanges();
+            try
+            {
+                dynamicTableCreator.SaveChanges();
+            }
+            catch {
+                MessageBox.Show("Произошла ошибка удаления.\n" +
+                    "Перед удаление объекта убедитесь, что у него нет зависимых\n" +
+                    "(В таблице зависимые объекты можно посмотреть по кнопке \"Просмотреть\")",
+                    "Ошибка удаления"
+                    );
+            }
             dynamicTableCreator.ReCreateDbContext();
             UpdateTable();
         }
